@@ -3,7 +3,7 @@ const elEmailInput = document.querySelector(".js-email");
 const elPasswordInput = document.querySelector(".js-password");
 const elEyeBtn = document.querySelector(".js-eye-btn");
 
-
+// CLICK KODNI KURISH
 elEyeBtn.addEventListener("click", () => {
   elPasswordInput.innerHTML = ""
   if (elPasswordInput.type == "text") {
@@ -13,14 +13,14 @@ elEyeBtn.addEventListener("click", () => {
   }
 })
 
-
+// FORM SUBMIT
 elForm.addEventListener("submit", evt => {
   evt.preventDefault()
-
   let elEmailInputVal = elEmailInput.value.trim();
   let elPasswordInputVal = elPasswordInput.value.trim();
   console.log(elEmailInputVal, elPasswordInputVal);
 
+  // FETCH
   fetch("https://reqres.in/api/login", {
     method: "POST",
     headers: {
@@ -33,7 +33,6 @@ elForm.addEventListener("submit", evt => {
   }).then(res => res.json()).then(data => {
     if (data) {
       window.localStorage.setItem("token", data.token);
-
       window.location.replace("index.html")
     }
   })

@@ -11,21 +11,29 @@
 <body>
   <div class="container">
     <div class="lists ">
+
+      <!-- USER LIST -->
       <ul class="user__list">
+        <!-- LOADER IMAGE -->
         <img class="image" src="./img/Spinner-1s-200px.svg" alt="">
       </ul>
       
+      <!-- POST LIST -->
       <ul class="post__list">
+        <!-- LOADER IMAGE -->
         <img class="commit__image" src="./img/Spinner-1s-200px.svg" alt="">
       </ul>
       
+      <!-- COMMENTS LIST -->
       <ul class="comments__list">
+        <!-- LOADER IMAGE -->
         <img class="commit__login" src="./img/Spinner-1s-200px.svg" alt="">
       </ul>
     </div>
   </div>
   
   
+  <!-- Template User -->
   <template class="user__list-template">
     <li class="user__list-item">
       <strong class="user__list-username"></strong>
@@ -57,12 +65,15 @@
     </li>
   </template>
   
+  <!-- Template Post -->
   <template class="post__list-template">
     <li class="post__list-item">
       <h3 class="post__list-title"></h3>
       <P class="post__list-body"></P>
     </li>
   </template>
+  
+  <!-- Template Comments -->
   <template class="comments__list-template">
     <li class="comments__list-item">
       <h3 class="comments__list-name"></h3>
