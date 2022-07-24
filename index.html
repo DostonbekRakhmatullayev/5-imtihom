@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" href="http://picsum.photos/50" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <div class="lists ">
+      <ul class="user__list">
+        <img class="image" src="./img/Spinner-1s-200px.svg" alt="">
+      </ul>
+      
+      <ul class="post__list">
+        <img class="commit__image" src="./img/Spinner-1s-200px.svg" alt="">
+      </ul>
+      
+      <ul class="comments__list">
+        <img class="commit__login" src="./img/Spinner-1s-200px.svg" alt="">
+      </ul>
+    </div>
+  </div>
+  
+  
+  <template class="user__list-template">
+    <li class="user__list-item">
+      <strong class="user__list-username"></strong>
+      <div class="user__list-name-id">
+        <h3 class="user__list-name"></h3>
+        <span class="user__list-id"></span>
+      </div>
+      <div class="user__list-address">
+        <strong class="address__city"></strong>
+        <strong class="address__street"></strong>
+        <strong class="address__suite"></strong>
+        <strong class="address__zipcode"></strong>
+      </div>
+      <div class="user__list-company">
+        <h4 class="user__list-company__name"></h4>
+        <h4 class="user__list-company__catch"></h4>
+        <h4 class="user__list-company__bs"></h4>
+      </div>
+      <div class="user__list-box">
+        <div class="user__list-box-tel-email">
+          <a class="box__phone" href=""></a>
+          <a class="emails" href=""></a>
+        </div>
+        <div class="box-min">
+          <a class="joy" href=""></a>
+          <a class="website" href=""></a>
+        </div>
+      </div>    
+    </li>
+  </template>
+  
+  <template class="post__list-template">
+    <li class="post__list-item">
+      <h3 class="post__list-title"></h3>
+      <P class="post__list-body"></P>
+    </li>
+  </template>
+  <template class="comments__list-template">
+    <li class="comments__list-item">
+      <h3 class="comments__list-name"></h3>
+      <p class="comments__list-body"></p>
+      <a class="comments__list-emil" href=""></a>
+    </li>
+  </template>
+  
+  <script src="./js/main.js"></script>
+</body>
+</html>

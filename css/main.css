@@ -1,0 +1,351 @@
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(64, 112, 112) ;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.lists {
+  display: flex;
+  color: white;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* scrol */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.commit__image {
+  display: none;
+  width: 250px;
+  height: 250px;
+  margin-top: 220px;
+}
+
+.commit__login {
+  display: none;
+  width: 250px;
+  height: 250px;
+  margin-top: 220px;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  margin-top: 220px;
+}
+
+
+.user__list{
+  /* padding-left: 30px; */
+  padding-right: 10px;
+  width: 33%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.post__list {
+  padding-left: 30px;
+  padding-right: 10px;
+  width: 34%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.comments__list{
+  padding-left: 30px;
+  padding-right: 10px;
+  width: 33%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.user__list-item {
+  border-radius: 2px;
+  position: relative;
+  padding: 10px 12px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgb(46, 75, 75);
+}
+
+.user__list-name-id {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__list-item {
+  border-radius: 10px;
+  position: relative;
+  padding: 10px 12px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgb(46, 75, 75);
+}
+
+.post__list-item::before {
+  position: absolute;
+  content: "";
+  left: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid  rgb(46, 75, 75);
+  border-left: 20px solid  transparent;
+  border-right: 20px solid  transparent;
+}
+
+.comments__list-item {
+  border-radius: 10px;
+  position: relative;
+  padding: 10px 12px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  background-color: rgb(46, 75, 75); 
+}
+
+.comments__list-item::before {
+  position: absolute;
+  content: "";
+  left: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid  rgb(46, 75, 75);
+  border-left: 20px solid  transparent;
+  border-right: 20px solid  transparent;
+}
+
+.comments__list-name {
+  font-weight:bold;
+  font-size: 23px;
+}
+
+.post__list-title {
+  font-weight:bold;
+  font-size: 23px;
+}
+
+.comments__list-body {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.post__list-body {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.comments__list-emil {
+  align-items: center;
+  margin-left: 30px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.comments__list-emil::before {
+  position: absolute;
+  content: ""; 
+  width: 25px;
+  height: 25px;
+  left: 13px;
+  bottom: 16px;
+  background-image: url(../img/email.png);
+  background-size: contain;
+}
+
+.user__list-username {
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(8, 8, 138);
+  text-shadow: 4px 2px 5px rgb(94, 80, 175);
+}
+
+.user__list-name {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 35px;
+  color: rgb(32, 32, 32);
+  text-shadow: 4px 2px 5px rgb(114, 107, 153);
+}
+
+.user__list-id {
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(32, 32, 32);
+  text-shadow: 4px 2px 5px rgb(114, 107, 153);
+}
+
+.user__list-address {
+  font-size: 15px;
+  font-weight: bold;
+  color: aquamarine;
+}
+
+.user__list-company {
+  font-weight: bold;
+  font-size: 20px;
+  color: aqua;
+}
+
+.box__phone {
+  color: white;
+  font-weight: bold;
+}
+
+.user__list-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.user__list-box-tel-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-min {
+  display: flex;
+  flex-direction: column;
+}
+
+.box__phone{
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+
+.box__phone::before {
+  position: absolute;
+  content: ""; 
+  width: 25px;
+  height: 25px;
+  left: 15px; 
+  bottom: 45px; 
+  background-image: url(../img/phone-call.png);
+  background-size: contain;
+}
+
+.emails {
+  align-items: center;
+  margin-left: 35px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.emails::before {
+  position: absolute;
+  content: ""; 
+  width: 25px;
+  height: 25px;
+  left: 13px;
+  bottom: 16px;
+  background-image: url(../img/email.png);
+  background-size: contain;
+}
+
+.joy {
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 14px;
+}
+
+.joy::before {
+  position: absolute;
+  content: ""; 
+  width: 25px;
+  height: 25px;
+  right: 68px;
+  bottom: 48px;
+  background-image: url(../img/planet-earth.png);
+  background-size: contain;
+  transition: 1s;
+}
+
+.website {
+  color: white;
+}
+
+.js-form {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.js-email, .js-password{
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+  padding: 10px 5px; 
+  font-size: 15px;
+}
+
+.js-eye-btn, .submit {
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+  padding: 10px 10px;
+}
+
+.js-eye-btn:hover {
+  background-color: blue;
+  color: white;
+}
+
+.submit:hover {
+  background-color: blue;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
